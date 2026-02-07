@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Nuestro San Valentín',
+  title: 'Hola Ari 🤍',
   description: 'Una sorpresa romántica.'
 };
 
