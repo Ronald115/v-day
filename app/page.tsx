@@ -18,7 +18,6 @@ export default function Home() {
   const [accepted, setAccepted] = useState(false);
   const [noButtonPos, setNoButtonPos] = useState({ x: 65, y: 74 });
   const [yesScale, setYesScale] = useState(1);
-  const [gifError, setGifError] = useState(false);
   const [acceptedGifIndex, setAcceptedGifIndex] = useState(0);
 
   useEffect(() => {
@@ -76,18 +75,18 @@ export default function Home() {
   return (
     <main className="page valentine-bg">
       <section className="proposal-card">
-        {!gifError ? (
-          <img
-            src={currentGif}
-            alt="Gif romántico"
-            width={260}
-            height={260}
-            className="proposal-gif"
-            onError={() => setGifError(true)}
-          />
-        ) : (
-          <div className="gif-placeholder">Agrega tus GIF en /public 💝</div>
-        )}
+        <img
+          src={currentGif}
+          alt="Gif romántico"
+          width={260}
+          height={260}
+          className="proposal-gif"
+          onError={() => {
+            if (accepted) {
+              setAcceptedGifIndex((current) => (current + 1) % ACCEPTED_GIFS.length);
+            }
+          }}
+        />
 
         <h2>
           Will you be my Valentine? <span>💌</span>
@@ -101,7 +100,6 @@ export default function Home() {
               onClick={() => {
                 setAccepted(true);
                 setAcceptedGifIndex(0);
-                setGifError(false);
               }}
               style={{ transform: `scale(${yesScale})` }}
             >

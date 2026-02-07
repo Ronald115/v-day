@@ -96,18 +96,6 @@ button {
   object-fit: cover;
 }
 
-.gif-placeholder {
-  width: 260px;
-  height: 260px;
-  border-radius: 18px;
-  display: grid;
-  place-items: center;
-  background: #fff;
-  color: #bf2e58;
-  font-weight: 700;
-  margin: 0 auto;
-  border: 2px dashed #ff8dad;
-}
 
 .buttons-zone {
   position: relative;
