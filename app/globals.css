@@ -61,6 +61,11 @@ button {
 input {
   background: #fff;
   border: 1px solid #ffc5d2;
+  color: #7c1f3d;
+}
+
+input[type='date'] {
+  color-scheme: light;
 }
 
 button {
@@ -119,6 +124,8 @@ button {
 .yes-btn {
   left: 18%;
   top: 74%;
+  transition: transform 180ms ease;
+  transform-origin: center;
 }
 
 .no-btn {
