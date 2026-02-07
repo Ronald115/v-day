@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.login-bg {
+  background: radial-gradient(circle at top, #ffdce8, #ffd0d8 45%, #ffbec8);
+}
+
+.valentine-bg {
+  background: linear-gradient(155deg, #ffe3ea, #ffd0d8, #ffbcc8);
+}
+
+.glass-card,
+.proposal-card {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(8px);
+  border-radius: 26px;
+  padding: 28px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(166, 25, 59, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.65);
+}
+
+.glass-card {
+  max-width: 410px;
+  width: 100%;
+}
+
+h1,
+h2,
+p {
+  color: #7c1f3d;
+}
+
+.login-form {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+input,
+button {
+  border: none;
+  border-radius: 14px;
+  font-size: 1rem;
+  padding: 12px;
+}
+
+input {
+  background: #fff;
+  border: 1px solid #ffc5d2;
+  color: #7c1f3d;
+}
+
+input[type='date'] {
+  color-scheme: light;
+}
+
+button {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.login-form button,
+.yes-btn {
+  background: #ff4f7b;
+  color: white;
+}
+
+.error-text {
+  display: block;
+  margin-top: 10px;
+  color: #af163f;
+}
+
+.proposal-card {
+  width: min(420px, 100%);
+  transform: translateY(-5vh);
+  position: relative;
+}
+
+.proposal-gif {
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+
+.buttons-zone {
+  position: relative;
+  min-height: 220px;
+  margin-top: 14px;
+}
+
+.yes-btn,
+.no-btn {
+  position: absolute;
+  width: 120px;
+}
+
+.yes-btn {
+  left: 18%;
+  top: 74%;
+  transition: transform 180ms ease;
+  transform-origin: center;
+}
+
+.no-btn {
+  background: #fff;
+  color: #bf2e58;
+  border: 2px solid #ff5e88;
+}
+
+.accepted-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 8px;
+}
