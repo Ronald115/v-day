@@ -88,9 +88,11 @@ export default function Home() {
           }}
         />
 
-        <h2>
-          Will you be my Valentine? <span>💌</span>
-        </h2>
+        {!accepted && (
+          <h2>
+            ¿Quieres ser mi San Valentín? <span>💌</span>
+          </h2>
+        )}
 
         {!accepted && (
           <div className="buttons-zone">

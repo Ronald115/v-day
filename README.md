@@ -4,7 +4,7 @@ Página romántica en **Next.js + React + TypeScript + CSS** con:
 
 - Login por fecha usando calendario (`2025-04-04`).
 - Tarjeta centrada con estética pastel roja/rosa.
-- Mensaje: **Will you be my Valentine? 💌**.
+- Mensaje: **¿Quieres ser mi San Valentín? 💌**.
 - Botón **No 😢** que se mueve para no dejarse presionar.
 - Cada vez que el mouse pasa por **No**, el botón **Sí 😊** crece poco a poco.
 - Al presionar **Sí 😊**, se ocultan los botones y se reproduce un carrusel en bucle de GIFs aceptados.
